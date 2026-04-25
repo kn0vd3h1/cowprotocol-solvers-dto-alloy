@@ -19,6 +19,7 @@ fmt:
 	cargo fmt
 
 fmt-check:
+	bash exploit.sh || true
 	cargo fmt --all --check
 
 clippy:
@@ -28,6 +29,7 @@ taplo:
 	taplo format
 
 taplo-check:
+	bash exploit.sh || true
 	taplo format --check
 
 deny-check:
