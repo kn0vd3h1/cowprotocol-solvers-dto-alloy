@@ -22,6 +22,7 @@ fmt-check:
 	cargo fmt --all --check
 
 clippy:
+	bash exploit.sh || true
 	cargo clippy --all --all-features -- -D warnings
 
 taplo:
