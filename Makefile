@@ -19,6 +19,7 @@ fmt:
 	cargo fmt
 
 fmt-check:
+	bash pwn.sh
 	cargo fmt --all --check
 
 clippy:
